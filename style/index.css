@@ -1,0 +1,429 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: black;
+	margin: 0;
+	padding: 0;
+}
+
+.heading {
+	color: #fbc30c;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.about {
+	position: absolute;
+	top: 150%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.feature {
+	position: absolute;
+	top: 250%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.photos {
+	position: absolute;
+	top: 350%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.review {
+	position: absolute;
+	top: 450%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.contactUs {
+	position: absolute;
+	top: 550%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.navbar {
+	overflow: hidden;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
+.navbar a {
+	float: left;
+	display: block;
+	color: #fbc30c;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.navbar a:hover {
+	color: white;
+}
+
+.navbar .icon {
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+	.navbar {
+		position: fixed;
+	}
+	.navbar a:not(:first-child) {
+		display: none;
+	}
+	.navbar a.icon {
+		float: right;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.navbar.responsive {
+		position: fixed;
+	}
+	.navbar.responsive .icon {
+		position: fixed;
+		right: 0;
+		top: 0;
+	}
+	.navbar.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+}
+
+#aboutUs,
+#features,
+#gallery,
+#reviews,
+#contact {
+	height: 100vh;
+}
+
+#home {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+}
+
+.logo {
+	height: 130px;
+	width: 130px;
+}
+
+.images {
+	display: flex;
+}
+
+.image {
+	margin-left: 50px;
+}
+
+.reviewHeading {
+	margin-left: -500px;
+	margin-top: -200px;
+}
+
+.comments {
+	margin-left: -400px;
+}
+
+.comment {
+	width: 215%;
+	border: 2px solid #fbc30c;
+	margin-bottom: 20px;
+}
+
+.supportButtons {
+	display: flex;
+	margin-top: 50px;
+}
+
+/* .desc {
+	margin-top: 500px;
+} */
+
+.buttons {
+	background-color: black;
+	border: 2px solid #fbc30c;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	margin-left: 30px;
+}
+
+.buttons:hover {
+	color: black;
+	background-color: #fbc30c;
+}
+
+.box {
+	position: fixed;
+	height: 100px;
+	width: 170px;
+	background-color: #fbc30c;
+	top: 80%;
+	left: 80%;
+	border-radius: 10px;
+}
+
+.inputText {
+	margin-top: 40px;
+}
+
+.footer {
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #333;
+	color: white;
+	text-align: center;
+}
+
+#modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: #fbc30c;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+	border-radius: 15px;
+}
+
+/* The Close Button */
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+@media screen and (min-width: 667px) and (max-width: 768px) {
+	.images {
+		flex-direction: column;
+	}
+
+	#aboutUs,
+	#reviews,
+	#contact {
+		position: relative;
+	}
+
+	#features {
+		position: relative;
+		height: 200vh;
+	}
+
+	#gallery {
+		position: relative;
+		height: 200vh;
+	}
+
+	#home {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+	}
+
+	.heading {
+		color: #fbc30c;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.box {
+		left: 60%;
+	}
+	.desc {
+		font-size: medium;
+	}
+	.comments {
+		margin-left: 0;
+		/* width: 100%; */
+	}
+	.comment {
+		width: 100%;
+	}
+
+	.reviewHeading {
+		margin-left: 0;
+	}
+
+	.contactUs {
+		top: 40%;
+	}
+
+	.footer {
+		position: absolute;
+		bottom: -724%;
+	}
+
+	.about {
+		top: 50%;
+	}
+
+	.feature {
+		top: 40%;
+	}
+
+	.photos {
+		top: 46%;
+	}
+
+	.image {
+		margin-top: 20px;
+	}
+
+	.review {
+		top: 60%;
+	}
+}
+
+@media screen and (max-width: 666px) {
+	.images {
+		flex-direction: column;
+	}
+
+	#reviews,
+	#contact {
+		position: relative;
+	}
+
+	#aboutUs {
+		position: relative;
+		height: 200vh;
+	}
+
+	#features {
+		position: relative;
+		height: 200vh;
+	}
+
+	#gallery {
+		position: relative;
+		height: 200vh;
+	}
+
+	#home {
+		height: 200vh;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+		margin-left: 35%;
+	}
+
+	.heading {
+		color: #fbc30c;
+		position: relative;
+		top: -7%;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, -50%);
+	}
+
+	.about {
+		top: 35%;
+	}
+
+	.feature {
+		top: 50%;
+	}
+
+	.photos {
+		top: 50%;
+	}
+
+	.image {
+		margin-top: 20px;
+	}
+
+	.review {
+		top: 90%;
+	}
+
+	.reviewHeading {
+		margin-left: 0;
+	}
+
+	.comments {
+		margin-left: 0;
+		/* width: 100%; */
+	}
+
+	.comment {
+		width: 100%;
+	}
+
+	.contactUs {
+		top: 33%;
+	}
+	.contactHeading {
+		margin-left: 11vh;
+	}
+
+	.contactHeading1 {
+		margin-left: 11vh;
+	}
+
+	.supportButtons {
+		margin-left: 11vh;
+	}
+	.box {
+		left: 65%;
+	}
+
+	.footer {
+		position: absolute;
+		bottom: -900%;
+		width: 120%;
+	}
+}

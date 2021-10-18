@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./index.js"></script>
+    <div id="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalText"></p>
+        </div>
+    </div>
+    <div class="navbar" id="nav">
+        <a href="#home">Home</a>
+        <a href="#aboutUs">About Us</a>
+        <a href="#features">Features</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact US</a>
+        <a href="javascript:void(0);" class="icon" onclick="navbar()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="main">
+        <div id="home">
+            <div class="heading">
+                <img src="./assets/images/unnamed.png" alt="VPM OWL" class="logo">
+                <h1 >VPN OWL</h1>
+                <p class="desc" style="color: #fbc30c;">Use VPN Owl to feel confident that your internet activity (home, public wifi, cellular) is always secure, private, and anonymous. </p>
+            </div>
+        </div>
+        <div id="aboutUs">
+            <div class="about">
+                <h1 style="color: #fbc30c;">ABOUT US</h1>
+                <p style="color: #fbc30c; font-size: large;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </div>
+        <div id="features">
+            <div class="feature">
+                <h1 style="color: #fbc30c;">FEATURES</h1>
+                <p style="color: #fbc30c; font-size: large;">1) Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p style="color: #fbc30c; font-size: large;">2) Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p style="color: #fbc30c; font-size: large;">3) Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </div>
+        <div id="gallery">
+            <div class="photos">
+                <h1 style="color: #fbc30c;">GALLERY</h1>
+                <div class="images">
+                    <img class="image" src="./assets/images/images.jpg" alt="VPN OWL">
+                    <img class="image" src="./assets/images/index.jpg" alt="VPN OWL">
+                    <img class="image" src="./assets/images/index.png" alt="VPN OWL">
+                    <img class="image" src="./assets/images/index1.jpg" alt="VPN OWL">
+                </div>
+            </div>
+        </div>
+        <div id="reviews">
+            <div class="review">
+                <h2 class="reviewHeading" style="color: #fbc30c;">USER REVIEWS</h2>
+                <div class="comments">
+                    <div class="comment">
+                        <div class="ratings">
+                            <img style="font-size: 32px;" src="./assets/images/icons8-star-48.png" alt="review">
+                            <img style="font-size: 32px;" src="./assets/images/icons8-star-48.png" alt="review">
+                            <img style="font-size: 32px;" src="./assets/images/icons8-star-48.png" alt="review">
+                            <img style="font-size: 32px;" src="./assets/images/icons8-star-48.png" alt="review">    
+                        </div>
+                        <h3 style="color: #fbc30c;">Abhay Bhardwaj</h3>
+                        <p style="color: #fbc30c;">Great Product</p>
+                    </div>
+                    <div class="comment">
+                        <div class="ratings">
+                            <img style="font-size: 32px;" src="./assets/images/icons8-star-48.png" alt="review">
+                            <img style="font-size: 32px;" src="./assets/images/icons8-star-48.png" alt="review">
+                            <img style="font-size: 32px;" src="./assets/images/icons8-star-48.png" alt="review">
+                        </div>
+                        <h3 style="color: #fbc30c;">Ajay Kumar</h3>
+                        <p style="color: #fbc30c;">Defected Product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+            <div class="contactUs">
+                <h1 class="contactHeading" style="color: #fbc30c;">We'd Love to Hear From You</h1>
+                <h3 class="contactHeading1" style="color: #fbc30c;">Whether you're curious about features, a free trial, or even press- we're ready to answer any and all questions.</h3>
+                <div class="supportButtons">
+                    <button class="buttons">Contact a Specialist</button>
+                    <button class="buttons">Get Support</button>
+                    <button class="buttons">Media Inquiries</button>
+                    <button class="buttons">PartnerShip Inquiries</button>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <input type="text" class="inputText" onchange="checkHexCode(event)">
+        </div>
+        <div class="footer">
+            <p>Footer</p>
+        </div>
+    </div>
+</body>
+</html>
